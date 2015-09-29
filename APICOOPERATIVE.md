@@ -16,11 +16,10 @@ Recebe como paramêtro o prefixo do taxista em {prefixo} e retorna um JSON com a
 
     {
       "content": {
-        "pk": 2491,
         "num": "110300",
-        "balance_debits": "3547.37",
-        "unlock_value": "180.00",
-        "week_debt": "180.00"
+        "balance_debits": 3547.37,
+        "unlock_value": 180.00,
+        "week_debt": 180.00
       },
       "reason": {
         "message": "",
@@ -31,9 +30,9 @@ Recebe como paramêtro o prefixo do taxista em {prefixo} e retorna um JSON com a
 
 *Campos:*
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Campo         | Tipo          | Descrição  | Exemplo    |
+| ------------- |:-------------:| ----------:| ----------:|
+|   num         | string        | Prefixo do taxista | 110300 |
+|   balance_debits         | float        | Total da dívida pendente do taxista | 3547.37 |
+|   unlock_value         | float       | Este valor corresponde ao valor que o taxista deve pagar para ser liberado na semana atual para poder trabalhar na Pontual  | 180 |
 
