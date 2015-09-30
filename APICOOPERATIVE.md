@@ -4,8 +4,13 @@
 
 > ** URL base **: https://portal.paggtaxi.com.br/api/cooperative/*{CLIENT_SECRET}*
 
-*Capturando dados financeiros do taxista[financial](#financial)
-
+* [1 - Capturando dados financeiros do taxista](#financial)
+* [2 - Validação de e-vouchers para corridas](#evoucher)
+* [3 - Telefones de taxistas](#phones)
+    * [3.1 - Listar telefones](#phones_list)
+    * [3.2 - Adicionar ou editar um telefone](#phones_add)
+    * [3.3 - Editar um telefone](#phones_edit)
+    * [3.4 - Deletar um telefone](#phones_delete)
 
 #### <a name="financial"></a>/driver/{ID}/financial
 
@@ -55,7 +60,7 @@
 
 ---
 
-#### /validate-voucher/
+#### <a name="evoucher"></a>/validate-voucher/
 
 * **POST**:
 
@@ -120,8 +125,12 @@
 
 ---
 
-#### /driver/{ID}/phones
+#### <a name="phones"></a>/driver/{ID}/phones
 
+
+
+
+<a name="phones_list"></a>
 * **GET**:
 
 > -Recebe como paramêtro o ID do taxista em {ID} e retorna um JSON com os telefones do taxista:
@@ -168,6 +177,7 @@
 
 
 
+<a name="phones_add"></a>
 * **POST**:
 
 > - Recebe um POST para cadastrar ou editar um telefone de taxista.
@@ -224,6 +234,7 @@
 
 
 
+<a name="phones_edit"></a>
 #### /driver/{ID}/phones/{PHONE}
 
 * **PUT**:
@@ -281,7 +292,7 @@
     }
 
 
-
+<a name="phones_delete"></a>
 * **DELETE**:
 
 > - Deleta um telefone de taxista e recebe como paramêtro em PHONE o telefone a ser deletado.
