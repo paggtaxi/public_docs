@@ -100,7 +100,7 @@
 
 ``` * demais campos já especificados anteriormente. ```
 
-*Resposta com **ERRO***:
+*Resposta com* ***ERRO***:
 
     {
         "content": {
@@ -206,7 +206,7 @@
       "success": true
     }
 
-*Resposta com **ERRO***:
+*Resposta com* ***ERRO***:
 
     {
       "content": {
@@ -264,7 +264,7 @@
       "success": true
     }
 
-*Resposta com **ERRO***:
+*Resposta com* ***ERRO***:
 
     {
       "content": {
@@ -303,7 +303,7 @@
     }
 
 
-*Resposta com **ERRO***:
+*Resposta com* ***ERRO***:
 
     {
         "content": {
