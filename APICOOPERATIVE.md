@@ -14,13 +14,13 @@
 
 *Requisição*:
 
-  https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/110300/financial
+  https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1324/financial
 
 *Resposta:*
 
     {
         "content": {
-            "num": "110300",
+            "num": "100000",
             "balance_debits": 3547.37,
             "unlock_value": 180.00,
             "week_debt": 180.00,
@@ -40,7 +40,7 @@
 
 | Campo         | Tipo          | Descrição  | Exemplo    |
 | ------------- |:-------------:| :----------| ----------:|
-|   ***num***         | string        | Prefixo do taxista | 110300 |
+|   ***num***         | string        | Prefixo do taxista | 100000 |
 |   ***balance_debits***         | float        | Total da dívida pendente do taxista | 3547.37 |
 |   ***unlock_value***         | float       | Este valor corresponde ao valor que o taxista deve pagar para ser liberado na semana atual para poder trabalhar na Pontual  | 180 |
 |   ***week_debt***         | float       | Valor que o taxista está devendo da semana atual  | 180 |
@@ -129,23 +129,23 @@
       "content": {
         "phones": [
           {
-            "name": "Raphael Sousa  Correa",
+            "name": "Alan Albuquerque",
             "created": "2014-12-05T19:26:04.602468",
-            "phone": "986706600",
+            "phone": "99999999",
             "main": true,
             "ddd": "21",
             "secondary": false
           },
           {
-            "name": "Raphael Sousa  Correa",
+            "name": "Alan Albuquerque",
             "created": "2014-12-23T08:15:45.163294",
-            "phone": "22016863",
+            "phone": "22222222",
             "main": false,
             "ddd": "21",
             "secondary": false
           }
         ],
-        "driver_id": "2491"
+        "driver_id": "1234"
       },
       "reason": {
         "message": "",
@@ -157,7 +157,7 @@
 
 | Campo         | Tipo          | Descrição  | Exemplo    |
 | ------------- |:-------------:| :----------| ----------:|
-|   ***name***         | string        | Nome do contato dono do telefone | Raphael Sousa  Correa |
+|   ***name***         | string        | Nome do contato dono do telefone | Alan Albuquerque |
 |   ***secondary***         | boolean        | Se o telefone é o telefone alternativo to taxista (só pode ter um e pode não ter nenhum) | false |
 |   ***main***         | boolean        | Se o telefone é o telefone o principal to taxista (só pode ter um e deve ter pelo menos um) | true |
 
@@ -173,7 +173,7 @@
 *Requisição*:
 
     {
-        'name': 'Raphael Sousa  Correa',
+        'name': 'Alan Albuquerque',
         'phone': '4799999999',
         'main': 'true',
         'secondary': 'false'
@@ -181,7 +181,7 @@
 
 | Campo         | Tipo          | Descrição  | Exemplo    |
 | ------------- |:-------------:| :----------| ----------:|
-|   ***name***         | string        | Nome do contato dono do telefone | Raphael Sousa  Correa |
+|   ***name***         | string        | Nome do contato dono do telefone | Alan Albuquerque |
 |   ***phone***         | string        | DDD e telefone, se o telefone informado já existir entra em modo de edição dos outros campos (para editar o número de telefone use o PUT). | 4799999999 |
 |   ***main***         | boolean        | Se o telefone é o telefone o principal to taxista (só pode ter um e deve ter pelo menos um) | true |
 |   ***secondary***         | boolean        | Se o telefone é o telefone alternativo to taxista (só pode ter um e pode não ter nenhum) | false |
@@ -192,8 +192,8 @@
     {
       "content": {
         "phone": "99999999",
-        "driver_id": "2491",
-        "name": "Raphael Sousa  Correa",
+        "driver_id": "1234",
+        "name": "Alan Albuquerque",
         "created": "2015-09-30T09:33:30.003276",
         "secondary": false,
         "main": true,
@@ -210,7 +210,7 @@
 
     {
       "content": {
-        "driver_id": "2491"
+        "driver_id": "1234"
       },
       "reason": {
         "message": "O telefone 478908787 é inválido.",
@@ -231,7 +231,7 @@
 *Requisição*:
 
     {
-        'name': 'Raphael Sousa  Correa',
+        'name': 'Alan Albuquerque',
         'phone': '4788888888',
         'main': 'true',
         'secondary': 'false'
@@ -239,7 +239,7 @@
 
 | Campo         | Tipo          | Descrição  | Exemplo    |
 | ------------- |:-------------:| :----------| ----------:|
-|   ***name***         | string        | Nome do contato dono do telefone | Raphael Sousa  Correa |
+|   ***name***         | string        | Nome do contato dono do telefone | Alan Albuquerque |
 |   ***phone***         | string        | DDD e telefone, se o telefone informado já existir entra em modo de edição dos outros campos (para editar o número de telefone use o PUT). | 4799999999 |
 |   ***main***         | boolean        | Se o telefone é o telefone o principal to taxista (só pode ter um e deve ter pelo menos um) | true |
 |   ***secondary***         | boolean        | Se o telefone é o telefone alternativo to taxista (só pode ter um e pode não ter nenhum) | false |
@@ -250,8 +250,8 @@
     {
       "content": {
         "phone": "88888888",
-        "driver_id": "2491",
-        "name": "Raphael Sousa  Correa",
+        "driver_id": "1234",
+        "name": "Alan Albuquerque",
         "created": "2015-09-30T09:33:30.003276",
         "secondary": false,
         "main": true,
@@ -268,7 +268,7 @@
 
     {
       "content": {
-        "driver_id": "2491"
+        "driver_id": "1234"
       },
       "reason": {
         "message": "O telefone 478908787 é inválido.",
@@ -287,9 +287,9 @@
 
     {
         "content": {
-            "phone": "22016863",
-            "driver_id": "2491",
-            "name": "Raphael Sousa  Correa",
+            "phone": "22222222",
+            "driver_id": "1234",
+            "name": "Alan Albuquerque",
             "created": "2014-12-23T08:15:45.163294",
             "secondary": false,
             "main": false,
@@ -308,8 +308,8 @@
     {
         "content": {
             "phone": "99999999",
-            "driver_id": "2491",
-            "name": "Raphael Sousa  Correa",
+            "driver_id": "1234",
+            "name": "Alan Albuquerque",
             "created": "2015-09-30T09:33:30.003276",
             "secondary": false,
             "main": true,
