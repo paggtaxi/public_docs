@@ -72,7 +72,7 @@
 |   ***evoucher***         | string        | Voucher único (5 letras) ou avulso (4 letras) para ser validado | vouch |
 
 
-*Resposta com ***SUCESSO*** *:
+*Resposta com* ***SUCESSO***:
 
     {
         "content": {
@@ -123,7 +123,7 @@
 
 > -Recebe como paramêtro o ID do taxista em {ID} e retorna um JSON com os telefones do taxista:
 
-*Resposta com ***SUCESSO*** *:
+*Resposta com* ***SUCESSO***:
 
     {
       "content": {
@@ -187,7 +187,7 @@
 |   ***secondary***         | boolean        | Se o telefone é o telefone alternativo to taxista (só pode ter um e pode não ter nenhum) | false |
 
 
-*Resposta com ***SUCESSO*** *:
+*Resposta com* ***SUCESSO***:
 
     {
       "content": {
@@ -245,7 +245,7 @@
 |   ***secondary***         | boolean        | Se o telefone é o telefone alternativo to taxista (só pode ter um e pode não ter nenhum) | false |
 
 
-*Resposta com ***SUCESSO*** *:
+*Resposta com* ***SUCESSO***:
 
     {
       "content": {
@@ -283,7 +283,7 @@
 
 > - Deleta um telefone de taxista e recebe como paramêtro em PHONE o telefone a ser deletado.
 
-*Resposta com ***SUCESSO*** *:
+*Resposta com* ***SUCESSO***:
 
     {
         "content": {
