@@ -1,6 +1,6 @@
 # API Cooperative
 
-> **versão**: 1.0
+> **versão**: 2.0
 
 > ** URL base **: https://portal.paggtaxi.com.br/api/cooperative/*{CLIENT_SECRET}*
 
