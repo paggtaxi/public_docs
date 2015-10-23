@@ -11,6 +11,7 @@
     * [3.2 - Adicionar ou editar um telefone](#phones_add)
     * [3.3 - Editar um telefone](#phones_edit)
     * [3.4 - Deletar um telefone](#phones_delete)
+* [4 - Foto do taxista](#photo)
 
 #### <a name="financial"></a>/driver/{ID}/financial
 
@@ -348,7 +349,7 @@
 
   https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1324/photo/medium
 
-*Capo SIZE:*
+*Campo SIZE:*
 
 
 | Campo         | Dimensões |
