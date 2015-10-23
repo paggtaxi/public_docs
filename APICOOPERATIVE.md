@@ -2,7 +2,7 @@
 
 > **versão**: 2.0
 
-> ** URL base **: https://portal.paggtaxi.com.br/api/cooperative/*{CLIENT_SECRET}*
+> **URL base**: https://portal.paggtaxi.com.br/api/cooperative/{CLIENT_SECRET}
 
 * [1 - Capturando dados financeiros do taxista](#financial)
 * [2 - Validação de e-vouchers para corridas](#evoucher)
@@ -335,3 +335,27 @@
         },
             "success": false
     }
+
+#### <a name="photo"></a>/driver/{ID}/photo/{SIZE}
+
+---
+
+* **GET**:
+
+>Recebe como paramêtro o ID do taxista em {ID} e retorna a foto do perfil do taxista do tamanho especificado em {SIZE}.
+
+*Requisição*:
+
+  https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1324/photo/medium
+
+*Capo SIZE:*
+
+
+| Campo         | Dimensões |
+| ------------- |:-------------:|
+|   ***small***         | 90x90 pixels        |
+|   ***medium***         | 260x260 pixels        |
+|   ***original***         | Tamanho original no momento do upload        |
+
+
+---
