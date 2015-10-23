@@ -354,7 +354,7 @@
 
 | Campo         | Dimensões |
 | ------------- |:-------------:|
-|   ***small***         | 90x90 pixels        |
+|   ***small (ou quando não especificar)***         | 90x90 pixels        |
 |   ***medium***         | 260x260 pixels        |
 |   ***original***         | Tamanho original no momento do upload        |
 
