@@ -348,6 +348,10 @@
 *Requisição*:
 
   https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1324/photo/medium
+  
+*Resposta*:
+
+Foto do taxista no corpo da resposta ou código 404 se o taxista não possuir foto.
 
 *Campo SIZE:*
 
