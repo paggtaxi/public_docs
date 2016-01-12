@@ -14,6 +14,7 @@ MÉTODO: POST
 CONTENT-TYPE: application/json
 
 Exemplo:
+
     {
         "amount": "100.00", // Valor da corrida (R$ 1.100,10 enviar "1100.10")
         "payment_type": "credit", // Tipo da forma de pagamento (credit ou debit)
@@ -47,6 +48,7 @@ Retorno de sucesso:
     }
 
 Retorno com erro:
+
     {
       "reason": {
         "message": {
