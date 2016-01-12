@@ -12,9 +12,10 @@
 ### /api/stone/{{CLIENT_NOT_SECRET}}/add-transaction/
 
 > MÉTODO: POST
+
 > CONTENT-TYPE: application/json
 
-> Exemplo:
+#### Exemplo:
 
     {
         "amount": "100.00", // Valor da corrida (R$ 1.100,10 enviar "1100.10")
@@ -28,7 +29,7 @@
         "card_number": "31231239****" // Número do cartão
     }
 
-> Campos obrigatórios:
+#### Campos obrigatórios:
   - seller_id
   - payment_type
   - created_at
@@ -38,7 +39,7 @@
   - card_number
   - authorization_code
 
-> Retorno de sucesso:
+#### Retorno de sucesso:
 
     {
       "reason": {
@@ -48,7 +49,7 @@
       "success": true
     }
 
-> Retorno com erro:
+#### Retorno com erro:
 
     {
       "reason": {
@@ -67,20 +68,21 @@
 ### /api/stone/{{CLIENT_NOT_SECRET}}/reverse-transaction/
 
 > MÉTODO: POST
+
 > CONTENT-TYPE: application/json
 
-> Exemplo:
+#### Exemplo:
 
     {
         "transaction_id": "e44ba8fa9ce411e5ace5c4e9840db3tr", // ID da Transação
         "seller_id": "00000000000" // CPF do taxista
     }
 
-> Campos obrigatórios:
+#### Campos obrigatórios:
   - seller_id
   - transaction_id
 
-> Retorno com erro:
+#### Retorno com erro:
 
     {
       "reason": {
