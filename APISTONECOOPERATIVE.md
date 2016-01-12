@@ -5,15 +5,16 @@
 > **URL**: https://portal.paggtaxi.com.br
 
 
-OBS.: Assume-se que somente a resposta com status 201 e/ou com o campo "success" como "true" tenha sido executada com êxito.
+> OBS.: Assume-se que somente a resposta com status 201 e/ou com o campo "success" como "true" tenha sido executada com êxito.
 
 ## Criar nova corrida:
 
 ### /api/stone/{{CLIENT_NOT_SECRET}}/add-transaction/
-MÉTODO: POST
-CONTENT-TYPE: application/json
 
-Exemplo:
+> MÉTODO: POST
+> CONTENT-TYPE: application/json
+
+> Exemplo:
 
     {
         "amount": "100.00", // Valor da corrida (R$ 1.100,10 enviar "1100.10")
@@ -27,7 +28,7 @@ Exemplo:
         "card_number": "31231239****" // Número do cartão
     }
 
-Campos obrigatórios:
+> Campos obrigatórios:
   - seller_id
   - payment_type
   - created_at
@@ -37,7 +38,7 @@ Campos obrigatórios:
   - card_number
   - authorization_code
 
-Retorno de sucesso:
+> Retorno de sucesso:
 
     {
       "reason": {
@@ -47,7 +48,7 @@ Retorno de sucesso:
       "success": true
     }
 
-Retorno com erro:
+> Retorno com erro:
 
     {
       "reason": {
@@ -64,22 +65,22 @@ Retorno com erro:
 ## Estornar corrida:
 
 ### /api/stone/{{CLIENT_NOT_SECRET}}/reverse-transaction/
-MÉTODO: POST
-CONTENT-TYPE: application/json
 
-Exemplo:
+> MÉTODO: POST
+> CONTENT-TYPE: application/json
+
+> Exemplo:
 
     {
         "transaction_id": "e44ba8fa9ce411e5ace5c4e9840db3tr", // ID da Transação
         "seller_id": "00000000000" // CPF do taxista
     }
 
-Campos obrigatórios:
+> Campos obrigatórios:
   - seller_id
   - transaction_id
 
-
-Retorno com erro:
+> Retorno com erro:
 
     {
       "reason": {
