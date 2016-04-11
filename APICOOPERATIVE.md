@@ -367,11 +367,11 @@
 
     {
         "content": {
-            "url": ""https://paggtaxi-production.s3.amazonaws.com/drivers_photos/medium/1600-8c6c0cfe27d64ea4a20068ccd623fc8f.jpg"
+            "url": "https://paggtaxi-production.s3.amazonaws.com/drivers_photos/medium/1600-8c6c0cfe27d64ea4a20068ccd623fc8f.jpg"
         },
         "reason": {
             "message": "",
-            "code": 201
+            "code": 200
         },
             "success": true
     }
