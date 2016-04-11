@@ -349,9 +349,6 @@
 
   https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1324/photo/medium
   
-*Resposta*:
-
-Foto do taxista no corpo da resposta ou código 404 se o taxista não possuir foto.
 
 *Campo SIZE:*
 
@@ -362,5 +359,21 @@ Foto do taxista no corpo da resposta ou código 404 se o taxista não possuir fo
 |   ***medium***         | 260x260 pixels        |
 |   ***original***         | Tamanho original no momento do upload        |
 
+
+
+*Resposta*:
+
+
+
+    {
+        "content": {
+            "url": ""https://paggtaxi-production.s3.amazonaws.com/drivers_photos/medium/1600-8c6c0cfe27d64ea4a20068ccd623fc8f.jpg"
+        },
+        "reason": {
+            "message": "",
+            "code": 201
+        },
+            "success": true
+    }
 
 ---
