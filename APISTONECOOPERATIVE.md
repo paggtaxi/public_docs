@@ -9,7 +9,7 @@
 
 ## Criar nova corrida:
 
-### /api/stone/{{CLIENT_NOT_SECRET}}/add-transaction/
+### /api/stone/{{CLIENT_SECRET}}/add-transaction/
 
 > MÉTODO: POST
 
