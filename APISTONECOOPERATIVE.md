@@ -9,7 +9,7 @@
 
 ## Criar nova corrida:
 
-### /api/stone/{{CLIENT_SECRET}}/add-transaction/
+### /api/stone/{{CLIENT_KEY}}/add-transaction/
 
 > MÉTODO: POST
 
@@ -65,7 +65,7 @@
 
 ## Estornar corrida:
 
-### /api/stone/{{CLIENT_NOT_SECRET}}/reverse-transaction/
+### /api/stone/{{CLIENT_KEY}}/reverse-transaction/
 
 > MÉTODO: POST
 
