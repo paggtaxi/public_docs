@@ -2,7 +2,7 @@
 
 > **versão**: 2.0
 
-> **URL base**: https://portal.paggtaxi.com.br/api/cooperative/{CLIENT_SECRET}
+> **URL base**: https://portal.paggtaxi.com.br/api/cooperative/{CLIENT_KEY}
 
     Valores para REGION_ID:
     [1] Rio de Janeiro
