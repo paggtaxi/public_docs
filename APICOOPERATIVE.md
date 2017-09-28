@@ -194,8 +194,8 @@
     {
         'name': 'Alan Albuquerque',
         'phone': '4799999999',
-        'main': 'true',
-        'secondary': 'false'
+        'main': true,
+        'secondary': false
     }
 
 | Campo         | Tipo          | Descrição  | Exemplo    |
@@ -253,8 +253,8 @@
     {
         'name': 'Alan Albuquerque',
         'phone': '4788888888',
-        'main': 'true',
-        'secondary': 'false'
+        'main': true,
+        'secondary': false
     }
 
 | Campo         | Tipo          | Descrição  | Exemplo    |
