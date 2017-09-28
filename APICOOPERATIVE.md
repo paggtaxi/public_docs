@@ -4,6 +4,11 @@
 
 > **URL base**: https://portal.paggtaxi.com.br/api/cooperative/{CLIENT_SECRET}
 
+    Valores para REGION_ID:
+    [1] Rio de Janeiro
+    [2] Joinville
+    [3] Buenos Aires 
+
 * [1 - Capturando dados financeiros do taxista](#financial)
 * [2 - Validação de e-vouchers para corridas](#evoucher)
 * [3 - Telefones de taxistas](#phones)
@@ -13,17 +18,17 @@
     * [3.4 - Deletar um telefone](#phones_delete)
 * [4 - Foto do taxista](#photo)
 
-#### <a name="financial"></a>/driver/{ID}/financial
+#### <a name="financial"></a>/driver/{REGION_ID}/{ID}/financial
 
 ---
 
 * **GET**:
 
->Recebe como paramêtro o ID do taxista em {ID} e retorna um JSON com as informações financeiras do taxista:
+>Recebe como paramêtro o ID da região em {REGION_ID} e o ID do taxista em {ID} e retorna um JSON com as informações financeiras do taxista:
 
 *Requisição*:
 
-  https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1324/financial
+  https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1/1324/financial
 
 *Resposta:*
 
@@ -126,7 +131,7 @@
 
 ---
 
-#### <a name="phones"></a>/driver/{ID}/phones
+#### <a name="phones"></a>/driver/{REGION_ID}/{ID}/phones
 
 
 
@@ -134,7 +139,7 @@
 <a name="phones_list"></a>
 * **GET**:
 
-> -Recebe como paramêtro o ID do taxista em {ID} e retorna um JSON com os telefones do taxista:
+> -Recebe como paramêtro o ID da região em {REGION_ID} e o ID do taxista em {ID} e retorna um JSON com os telefones do taxista:
 
 *Resposta com* ***SUCESSO***:
 
@@ -236,7 +241,7 @@
 
 
 <a name="phones_edit"></a>
-#### /driver/{ID}/phones/{PHONE}
+#### /driver/{REGION_ID}/{ID}/phones/{PHONE}
 
 * **PUT**:
 
@@ -337,17 +342,17 @@
             "success": false
     }
 
-#### <a name="photo"></a>/driver/{ID}/photo/{SIZE}
+#### <a name="photo"></a>/driver/{REGION_ID}/{ID}/photo/{SIZE}
 
 ---
 
 * **GET**:
 
->Recebe como paramêtro o ID do taxista em {ID} e retorna a foto do perfil do taxista do tamanho especificado em {SIZE}.
+>Recebe como paramêtro o ID da região em {REGION_ID} e o ID do taxista em {ID} e retorna a foto do perfil do taxista do tamanho especificado em {SIZE}.
 
 *Requisição*:
 
-  https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1324/photo/medium
+  https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1/1324/photo/small
   
 
 *Campo SIZE:*
@@ -367,7 +372,7 @@
 
     {
         "content": {
-            "url": "https://paggtaxi-production.s3.amazonaws.com/drivers_photos/medium/1600-8c6c0cfe27d64ea4a20068ccd623fc8f.jpg"
+            "url": "https://paggtaxi-production.s3.amazonaws.com/drivers_photos/small/4218-f1c97f222ad246d592580ba221a7404b.jpg"
         },
         "reason": {
             "message": "",
