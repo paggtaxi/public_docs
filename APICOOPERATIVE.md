@@ -71,7 +71,7 @@
 * **POST**:
 
 > - Recebe um POST com o voucher e a OS da corrida, se a OS for informada associa a corrida ao voucher, assim esse voucher não poderá ser validado em outra corrida novamente.
-> - ***content-type***: *application/x-www-form-urlencoded*
+> - ***content-type***: *application/json* ou *application/x-www-form-urlencoded*
 
 *Requisição*:
 
@@ -342,7 +342,7 @@
             "success": false
     }
 
-#### <a name="photo"></a>/driver/{REGION_ID}/{ID}/photo/{SIZE}
+#### <a name="photo"></a>/driver/{REGION_ID}/{ID}/photo-url/{SIZE}
 
 ---
 
@@ -352,7 +352,7 @@
 
 *Requisição*:
 
-  https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1/1324/photo/small
+  https://portal.paggtaxi.com.br/api/cooperative/Iia41sdr1/driver/1/1324/photo-url/small
   
 
 *Campo SIZE:*
