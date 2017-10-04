@@ -4,10 +4,7 @@
 
 > **URL base**: https://portal.paggtaxi.com.br/api/cooperative/{CLIENT_KEY}
 
-    Valores para REGION_ID:
-    [1] Rio de Janeiro
-    [2] Joinville
-    [3] Buenos Aires 
+> **WORK_CITY_ID**: Este paramêtro é referente ao id da região do taxista na base do sistema da cooperativa.
 
 * [1 - Capturando dados financeiros do taxista](#financial)
 * [2 - Validação de e-vouchers para corridas](#evoucher)
@@ -18,13 +15,13 @@
     * [3.4 - Deletar um telefone](#phones_delete)
 * [4 - Foto do taxista](#photo)
 
-#### <a name="financial"></a>/driver/{REGION_ID}/{ID}/financial
+#### <a name="financial"></a>/driver/{WORK_CITY_ID}/{ID}/financial
 
 ---
 
 * **GET**:
 
->Recebe como paramêtro o ID da região em {REGION_ID} e o ID do taxista em {ID} e retorna um JSON com as informações financeiras do taxista:
+>Recebe como paramêtro o ID da região em {WORK_CITY_ID} e o ID do taxista em {ID} e retorna um JSON com as informações financeiras do taxista:
 
 *Requisição*:
 
@@ -131,7 +128,7 @@
 
 ---
 
-#### <a name="phones"></a>/driver/{REGION_ID}/{ID}/phones
+#### <a name="phones"></a>/driver/{WORK_CITY_ID}/{ID}/phones
 
 
 
@@ -139,7 +136,7 @@
 <a name="phones_list"></a>
 * **GET**:
 
-> -Recebe como paramêtro o ID da região em {REGION_ID} e o ID do taxista em {ID} e retorna um JSON com os telefones do taxista:
+> -Recebe como paramêtro o ID da região em {WORK_CITY_ID} e o ID do taxista em {ID} e retorna um JSON com os telefones do taxista:
 
 *Resposta com* ***SUCESSO***:
 
@@ -241,7 +238,7 @@
 
 
 <a name="phones_edit"></a>
-#### /driver/{REGION_ID}/{ID}/phones/{PHONE}
+#### /driver/{WORK_CITY_ID}/{ID}/phones/{PHONE}
 
 * **PUT**:
 
@@ -342,13 +339,13 @@
             "success": false
     }
 
-#### <a name="photo"></a>/driver/{REGION_ID}/{ID}/photo-url/{SIZE}
+#### <a name="photo"></a>/driver/{WORK_CITY_ID}/{ID}/photo-url/{SIZE}
 
 ---
 
 * **GET**:
 
->Recebe como paramêtro o ID da região em {REGION_ID} e o ID do taxista em {ID} e retorna a foto do perfil do taxista do tamanho especificado em {SIZE}.
+>Recebe como paramêtro o ID da região em {WORK_CITY_ID} e o ID do taxista em {ID} e retorna a foto do perfil do taxista do tamanho especificado em {SIZE}.
 
 *Requisição*:
 
